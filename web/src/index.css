@@ -1,0 +1,74 @@
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  color: var(--color-text);
+
+  --color-background: #EBF2F5;
+
+  --color-banner: #29B6D1;
+  --color-banner2: #00C7C7;
+
+  --color-blue: #15C3D6;
+  --color-blue-light: #17D6EB;
+  --color-blue-lighter: #B3DAE2;
+  --color-blue-dark: #12AFCB;
+  --color-white: #fff;
+  --color-green: #37C77F;
+  --color-green-light: #3EE08F;
+  --color-green-lighter: #A1E9C5;
+  --color-red: #FF669D;
+  --color-red-lighter: #FFC2D8;
+  --color-yellow: #FFD666;
+  --color-yellow-dark: #8D734B;
+
+  --color-blue-blur:#E6F7FB;
+  --color-green-blur: #E6F7FB;
+  --color-red-blur: #FCF0F4;
+
+  --color-title: #4D6F80;
+  --color-text: #8FA7B2;
+  --color-border: #D3E2E5;
+  --color-input: #D3E2E5;
+  --color-input-dark: #D3E2E5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  background: var(--color-background);
+}
+body,
+input,
+button,
+textarea, a, select, label  {
+  color: var(--color-text);
+  font: 400 1rem "Inter";
+  color: var(--color-text-base);
+  transition: 200ms;
+}
+a {
+  text-decoration: none;
+}
+input, select {
+  outline: 0;
+  border: none;
+}
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
