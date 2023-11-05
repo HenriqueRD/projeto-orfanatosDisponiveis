@@ -52,8 +52,7 @@ export async function findOrphanage(req: Request, res: Response) {
   })
 
   data.images = data.images.map(x => {
-    console.log( 0);
-        return {
+    return {
       ...x,
       image_url: `http://localhost:3333/uploads/${x.name}`
     } 
