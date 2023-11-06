@@ -13,10 +13,10 @@ export class Orphanage {
   phone: string
 
   @Column()
-  latitude: number
+  latitude: string
 
   @Column()
-  longitude: number
+  longitude: string
   
   @Column()
   description: string
