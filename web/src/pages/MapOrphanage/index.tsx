@@ -3,13 +3,9 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 import { ArrowLeft, ArrowRight, Plus } from '@phosphor-icons/react'
-<<<<<<< HEAD
 import logo from '../../assets/logo.svg';
 import api from '../../api/api';
 import Leaflet from 'leaflet';
-=======
-import api from '../../api/api';
->>>>>>> 772a0a2c48294177d0318eafdb6919e862751654
 
 interface OrphanageProps {
   id: number
@@ -17,7 +13,6 @@ interface OrphanageProps {
   latitude: number
   longitude: number
 }
-<<<<<<< HEAD
 
 const mapStyle = Leaflet.icon({
   iconUrl: logo,
@@ -25,8 +20,6 @@ const mapStyle = Leaflet.icon({
   iconAnchor: [24, 48],
   popupAnchor: [142, 11]
 })
-=======
->>>>>>> 772a0a2c48294177d0318eafdb6919e862751654
 
 export default function MapOrphanage() {
 
@@ -68,17 +61,10 @@ export default function MapOrphanage() {
             {
               orphanages.map(x => {
                 return (
-<<<<<<< HEAD
                   <Marker icon={mapStyle} key={x.id} position={[x.latitude, x.longitude]}>
                     <Popup closeButton={false} minWidth={200} maxWidth={200} className="popupMap">
                       <span>{x.name}</span>
                       <Link to={`/orphanage/${x.id}`}>
-=======
-                  <Marker key={x.id} position={[x.latitude, x.longitude]}>
-                    <Popup>
-                      <Link to={`/orphanage/${x.id}`}>
-                        <span>{x.name}</span>
->>>>>>> 772a0a2c48294177d0318eafdb6919e862751654
                         <ArrowRight size={24} />
                       </Link>
                     </Popup>

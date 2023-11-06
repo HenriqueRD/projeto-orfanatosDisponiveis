@@ -5,10 +5,7 @@ import { ArrowLeft, Clock, WarningCircle, WhatsappLogo } from '@phosphor-icons/r
 import { useEffect, useState } from 'react';
 import api from '../../api/api';
 import { MapContainer, Marker, TileLayer } from 'react-leaflet';
-<<<<<<< HEAD
 import Leaflet from 'leaflet';
-=======
->>>>>>> 772a0a2c48294177d0318eafdb6919e862751654
 
 interface OrphanageProps {
   name: string
@@ -22,16 +19,11 @@ interface OrphanageProps {
   images: [
     {
       id: number
-<<<<<<< HEAD
       image_url: string
-=======
-      image_uirl: string
->>>>>>> 772a0a2c48294177d0318eafdb6919e862751654
     }
   ]
 }
 
-<<<<<<< HEAD
 const mapStyle = Leaflet.icon({
   iconUrl: logo,
   iconSize: [48, 48],
@@ -39,16 +31,11 @@ const mapStyle = Leaflet.icon({
   popupAnchor: [142, 11]
 })
 
-=======
->>>>>>> 772a0a2c48294177d0318eafdb6919e862751654
 export default function Orphanage() {
   
   const { id } = useParams()
   const [ orphanage, setOrphanage ] = useState<OrphanageProps>()
-<<<<<<< HEAD
   const [ image, setImage ] = useState(0)
-=======
->>>>>>> 772a0a2c48294177d0318eafdb6919e862751654
 
   useEffect(() => {
     async function get() {
@@ -70,11 +57,7 @@ export default function Orphanage() {
       <div className="content">
         <header className="headerMobile">
           <div className="headMobContainer">
-<<<<<<< HEAD
             <Link to="/orphanages"><ArrowLeft weight="bold" size={34} /></Link>
-=======
-            <Link to="/"><ArrowLeft weight="bold" size={34} /></Link>
->>>>>>> 772a0a2c48294177d0318eafdb6919e862751654
             <div className="logo">
               <img src={logo} alt="logo" />
               <h1>Orfony</h1>
@@ -83,7 +66,6 @@ export default function Orphanage() {
         </header>
         <main>
           <div className="container">
-<<<<<<< HEAD
             <div className="imagePrimary">
               <img src={orphanage?.images[image].image_url} />
             </div>
@@ -98,10 +80,6 @@ export default function Orphanage() {
                   )
                 })
               }
-=======
-            <div className="images">
-              <img src="https://blog.causeiobem.org/wp-content/uploads/2022/06/proteger-a-infancia-704x454.jpg" alt="" />
->>>>>>> 772a0a2c48294177d0318eafdb6919e862751654
             </div>
             <div className="info">
               <div className="desc">
@@ -115,11 +93,7 @@ export default function Orphanage() {
                           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         />
-<<<<<<< HEAD
                         <Marker icon={mapStyle} position={[orphanage.latitude , orphanage.longitude]} />
-=======
-                        <Marker position={[orphanage.latitude , orphanage.longitude]} />
->>>>>>> 772a0a2c48294177d0318eafdb6919e862751654
                       </MapContainer>
                     )
                   }
