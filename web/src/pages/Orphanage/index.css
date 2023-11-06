@@ -40,6 +40,7 @@
   margin: 0rem auto;
   padding: 2rem 0;
 }
+<<<<<<< HEAD
 #Orphanage .content main .imagePrimary img {
   width: 100%;
   height: 250px;
@@ -62,6 +63,10 @@
 }
 #Orphanage .content main .images img.active {
   opacity: 1;
+=======
+#Orphanage .content main .images img {
+  width: 100%;
+>>>>>>> 772a0a2c48294177d0318eafdb6919e862751654
 }
 #Orphanage .content main .container {
   border: 2px solid var(--color-border);
@@ -179,6 +184,17 @@
     flex-direction: column;
     justify-content: space-between;
   }
+<<<<<<< HEAD
+=======
+  #Orphanage .sideBar main  {
+    position: fixed;
+    height: 94vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+>>>>>>> 772a0a2c48294177d0318eafdb6919e862751654
   #Orphanage .content main {
     max-width: 720px;
     width: 100%;
@@ -195,6 +211,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
   }
+<<<<<<< HEAD
   #Orphanage .content main .imagePrimary img {
     height: 350px;
   }
@@ -205,3 +222,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
+=======
+}
+>>>>>>> 772a0a2c48294177d0318eafdb6919e862751654
