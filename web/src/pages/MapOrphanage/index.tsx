@@ -1,11 +1,11 @@
 import './index.css'
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { Link } from "react-router-dom"
+import { useState, useEffect } from "react"
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 import { ArrowLeft, ArrowRight, Plus } from '@phosphor-icons/react'
-import logo from '../../assets/logo.svg';
-import api from '../../api/api';
-import Leaflet from 'leaflet';
+import logo from '../../assets/logo.svg'
+import api from '../../api/api'
+import Leaflet from 'leaflet'
 
 interface OrphanageProps {
   id: number
@@ -64,7 +64,7 @@ export default function MapOrphanage() {
                   <Marker icon={mapStyle} key={x.id} position={[x.latitude, x.longitude]}>
                     <Popup closeButton={false} minWidth={200} maxWidth={200} className="popupMap">
                       <span>{x.name}</span>
-                      <Link to={`/orphanage/${x.id}`}>
+                      <Link to={`/orphanages/${x.id}`}>
                         <ArrowRight size={24} />
                       </Link>
                     </Popup>
@@ -72,9 +72,8 @@ export default function MapOrphanage() {
                 )
               })
             }
-            
           </MapContainer>
-          <Link className="create" to="/create-orphanages"><Plus size={28} weight="bold" /></Link>
+          <Link className="create" to="/orphanages/create"><Plus size={28} weight="bold" /></Link>
         </main>
       </div>
     </div>

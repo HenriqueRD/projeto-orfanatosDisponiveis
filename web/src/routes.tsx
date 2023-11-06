@@ -11,8 +11,8 @@ export default function Router() {
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/orphanages" Component={MapOrphanage} />
-        <Route path="/orphanage/:id" Component={Orphanage} />
-        <Route path="/create-orphanages" Component={CreateOrphanage} />
+        <Route path="/orphanages/:id" Component={Orphanage} />
+        <Route path="/orphanages/create" Component={CreateOrphanage} />
       </Routes>
     </BrowserRouter>
   )

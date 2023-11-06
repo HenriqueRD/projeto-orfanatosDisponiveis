@@ -35,8 +35,14 @@
   --color-title: #4D6F80;
   --color-text: #8FA7B2;
   --color-border: #D3E2E5;
-  --color-input: #D3E2E5;
+  --color-input: #F5F8FA;
   --color-input-dark: #D3E2E5;
+}
+input:focus, button:focus, textarea:focus {
+  outline: 1px solid var(--color-blue); /* Adicione uma borda preta quando em foco */
+}
+input:hover, button:hover, textarea:hover {
+  border: 1px solid var(--color-blue) !important; /* Adicione uma borda preta quando em foco */
 }
 * {
   margin: 0;

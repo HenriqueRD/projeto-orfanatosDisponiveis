@@ -46,7 +46,136 @@
   overflow: hidden;
   border-radius: 15px;
 }
-
+#CreateOrphanage .content main .container {
+  padding: 2rem;
+}
+#CreateOrphanage .content main .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+#CreateOrphanage .content main .container form .chield {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#CreateOrphanage .content main .container form .chield .head {
+  display: flex;
+  color: var(--color-title);
+  flex-direction: column;
+  gap: .8rem;
+}
+#CreateOrphanage .content main .container form .chield .input {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: .5rem;
+}
+#CreateOrphanage .content main .container form .chield  label {
+  font-weight: 500;
+  color: var(--color-title);
+  font-size: 1.1rem;
+}
+#CreateOrphanage .content main .container form .chield .input .head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+#CreateOrphanage .content main .container form .chield .input .head span {
+  font-weight: 300;
+  font-size: .9rem;
+}
+#CreateOrphanage .content main .container form .chield .input textarea {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  min-height: 150px;
+  max-height: 150px;
+  resize: vertical;
+  background-color: var(--color-input);
+  padding: 1.2rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-title);
+  border-radius: 15px;
+}
+#CreateOrphanage .content main .container form .chield .input input {
+  background-color: var(--color-input);
+  padding: 1.2rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-title);
+  border-radius: 15px;
+}
+#CreateOrphanage .content main .container form .chield .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#CreateOrphanage .content main .container form .chield .checkbox input {
+  width: 25px;
+  height: 25px;
+}
+#CreateOrphanage .content main .container form .chield .containerImages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#CreateOrphanage .content main .container form .chield .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+#CreateOrphanage .content main .container form .chield .images input[type="file"] {
+  display: none;
+}
+#CreateOrphanage .content main .container form .chield .images .boxImages {
+  width: 90px;
+  height: 90px;
+  background-color: var(--color-input);
+  cursor: pointer;
+  border-radius: 20px;
+}
+#CreateOrphanage .content main .container form .chield .images .box {
+  width: 90px;
+  height: 90px;
+  background-color: var(--color-input);
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+}
+#CreateOrphanage .content main .container form .chield .images label {
+  cursor: pointer;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+}
+#CreateOrphanage .content main .container form .chield .images .box:hover {
+  border-color: var(--color-blue-dark);
+}
+#CreateOrphanage .content main .container form .chield .images .box:focus {
+  border-color: var(--color-blue-dark);
+}
+#CreateOrphanage .content main .container form .submit {
+  color: var(--color-white);
+  background-color: var(--color-green);
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 100%;
+  font-weight: 800;
+}
+@media (min-width: 480px) {
+  #CreateOrphanage .content main .container form .chield .images {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 600px) {
+  #CreateOrphanage .content main .container form .chield .images {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+}
 @media (min-width: 1000px) {
   #CreateOrphanage .content .headerMobile {
     display: none;
@@ -86,4 +215,12 @@
     margin: 0rem auto;
     padding-top: 8rem;
   }
+  #CreateOrphanage .content main .container{
+    padding: 4rem;
+  }
+  #CreateOrphanage .content main .container form .chield .images {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr !important;
+    gap: .5rem;
+  }
 }
+
