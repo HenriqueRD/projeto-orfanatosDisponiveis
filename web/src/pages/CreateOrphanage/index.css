@@ -1,0 +1,89 @@
+#CreateOrphanage {
+  display: flex
+}
+#CreateOrphanage .sideBar {
+  padding: 2rem;
+  display: none;
+  visibility: hidden;
+  flex: 1;
+}
+#CreateOrphanage .content {
+  flex: 15;
+}
+#CreateOrphanage .content .headerMobile {
+  display: flex;
+  width: 100%;
+  background-color: var(--color-blue);
+}
+#CreateOrphanage .content .headerMobile .headMobContainer {
+  width: 90%;
+  margin: 1rem auto;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#CreateOrphanage .content .headerMobile .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#CreateOrphanage .content .headerMobile .logo img {
+  width: 54px;
+  height: 54px;
+}
+#CreateOrphanage .content .headerMobile > a:hover {
+  opacity: .9;
+}
+#CreateOrphanage .content main {
+  width: 90%;
+  margin: 0rem auto;
+  padding: 2rem 0;
+}
+#CreateOrphanage .content main .container {
+  border: 2px solid var(--color-border);
+  background-color: var(--color-white);
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+@media (min-width: 1000px) {
+  #CreateOrphanage .content .headerMobile {
+    display: none;
+    visibility: hidden;
+  }
+  #CreateOrphanage .sideBar {
+    display: flex;
+    width: 100%;
+    color: var(--color-white);
+    justify-content: center;
+    visibility: visible;
+    background-color: var(--color-blue);
+  }
+  #CreateOrphanage .sideBar a {
+    width: 64px;
+    height: 64px;
+    background-color: var(--color-blue-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px
+  }
+  #CreateOrphanage .sideBar a:hover {
+    background-color: var(--color-blue-light);
+  }
+  #CreateOrphanage .sideBar > div {
+    position: fixed;
+    height: 94vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #CreateOrphanage .content main {
+    max-width: 720px;
+    width: 100%;
+    margin: 0rem auto;
+    padding-top: 8rem;
+  }
+}

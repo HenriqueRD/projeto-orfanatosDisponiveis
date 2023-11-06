@@ -1,0 +1,207 @@
+#Orphanage {
+  display: flex
+}
+#Orphanage .sideBar {
+  padding: 2rem;
+  display: none;
+  visibility: hidden;
+  flex: 1;
+}
+#Orphanage .content {
+  flex: 15;
+}
+#Orphanage .content .headerMobile {
+  display: flex;
+  width: 100%;
+  background-color: var(--color-blue);
+}
+#Orphanage .content .headerMobile .headMobContainer {
+  width: 90%;
+  margin: 1rem auto;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Orphanage .content .headerMobile .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#Orphanage .content .headerMobile .logo img {
+  width: 54px;
+  height: 54px;
+}
+#Orphanage .content .headerMobile > a:hover {
+  opacity: .9;
+}
+#Orphanage .content main {
+  width: 90%;
+  margin: 0rem auto;
+  padding: 2rem 0;
+}
+#Orphanage .content main .imagePrimary img {
+  width: 100%;
+  height: 250px;
+}
+#Orphanage .content main .images {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#Orphanage .content main .images img {
+  width: 94px;
+  height: 94px;
+  border-radius: 12px;
+  opacity: .5;
+  transition: 200ms;
+}
+#Orphanage .content main .images img:hover {
+  opacity: 1;
+}
+#Orphanage .content main .images img.active {
+  opacity: 1;
+}
+#Orphanage .content main .container {
+  border: 2px solid var(--color-border);
+  background-color: var(--color-white);
+  overflow: hidden;
+  border-radius: 15px;
+}
+#Orphanage .content main .container .info {
+  padding: 2rem;
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  border-bottom: 2px solid var(--color-border);
+}
+#Orphanage .content main .container .info .desc {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+#Orphanage .content main .container .info .desc p {
+  line-height: 1.5rem;
+  text-align: justify;
+}
+#Orphanage .content main .container .info h1 { 
+  color: var(--color-title);
+  font-size: 2.3rem;
+}
+#Orphanage .content main .container .info h2 { 
+  color: var(--color-title);
+  font-size: 1.7rem;
+}
+#Orphanage .content main .container .info .map > .mapLink {
+  top: -10px;
+  background-color: var(--color-blue-lighter);
+}
+#Orphanage .content main .container .info .leaflet-container {
+  width:100%;  
+  height: 250px;
+  border-radius: 15px;
+}
+#Orphanage .content main .container .info .hours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Orphanage .content main .container .info .hours .containerHours {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+#Orphanage .content main .container .info .hours .containerHours > div {
+  border: 1px solid var(--color-blue-lighter);
+  border-radius: 15px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  gap: 1.5rem;
+  color: var(--color-blue-dark);
+  background-image:  linear-gradient(145deg, var(--color-blue-blur)50%, var(--color-white)100%);
+}
+#Orphanage .content main .container .info .hours .containerHours > div.yes {
+  border: 1px solid var(--color-green-lighter);
+  color: var(--color-green);
+  background-image:  linear-gradient(145deg, var(--color-green-blur)50%, var(--color-white)100%);
+}
+#Orphanage .content main .container .info .hours .containerHours > div.no {
+  border: 1px solid var(--color-red-lighter);
+  color: var(--color-red);
+  background-image:  linear-gradient(145deg, var(--color-red-blur)50%, var(--color-white)100%);
+}
+#Orphanage .content main .container .info .desc .whats {
+  color: var(--color-white);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+  background-color: var(--color-green);
+}
+#Orphanage .content main .container .info .desc .whats:hover {
+  background-color: var(--color-green-light);
+}
+@media (min-width: 1000px) {
+  #Orphanage .content .headerMobile {
+    display: none;
+    visibility: hidden;
+  }
+  #Orphanage .sideBar {
+    display: flex;
+    color: var(--color-white);
+    justify-content: center;
+    visibility: visible;
+    background-color: var(--color-blue);
+  }
+  #Orphanage .sideBar a {
+    width: 64px;
+    height: 64px;
+    background-color: var(--color-blue-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px
+  }
+  #Orphanage .sideBar a:hover {
+    background-color: var(--color-blue-light);
+  }
+  #Orphanage .sideBar > div {
+    position: fixed;
+    height: 94vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #Orphanage .content main {
+    max-width: 720px;
+    width: 100%;
+    margin: 0rem auto;
+    padding-top: 8rem;
+  }
+  #Orphanage .content main .container .info {
+    padding: 4rem;
+  }
+}
+@media (min-width: 600px) {
+  #Orphanage .content main .container .info .hours .containerHours {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  #Orphanage .content main .imagePrimary img {
+    height: 350px;
+  }
+}
+@media (min-width: 800px) {
+  #Orphanage .content main .container .images {
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}

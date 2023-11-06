@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import MapOrphanage from "./pages/MapOrphanage";
+import Orphanage from "./pages/Orphanage";
+import CreateOrphanage from "./pages/CreateOrphanage";
 
 export default function Router() {
 
@@ -9,8 +11,8 @@ export default function Router() {
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/orphanages" Component={MapOrphanage} />
-        <Route path="/orphanege/:id" Component={MapOrphanage} />
-        <Route path="/create-orphanages" Component={Home} />
+        <Route path="/orphanage/:id" Component={Orphanage} />
+        <Route path="/create-orphanages" Component={CreateOrphanage} />
       </Routes>
     </BrowserRouter>
   )
