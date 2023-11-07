@@ -29,7 +29,7 @@
   --color-yellow-dark: #8D734B;
 
   --color-blue-blur:#E6F7FB;
-  --color-green-blur: #E6F7FB;
+  --color-green-blur: #EDFFF6;
   --color-red-blur: #FCF0F4;
 
   --color-title: #4D6F80;
@@ -39,10 +39,10 @@
   --color-input-dark: #D3E2E5;
 }
 input:focus, button:focus, textarea:focus {
-  outline: 1px solid var(--color-blue); /* Adicione uma borda preta quando em foco */
+  outline: 1px solid var(--color-blue);
 }
 input:hover, button:hover, textarea:hover {
-  border: 1px solid var(--color-blue) !important; /* Adicione uma borda preta quando em foco */
+  border: 1px solid var(--color-blue) !important;
 }
 * {
   margin: 0;

@@ -1,6 +1,4 @@
 node_modules
 *.sqlite3
-<<<<<<< HEAD
 uploads
-=======
->>>>>>> 772a0a2c48294177d0318eafdb6919e862751654
+

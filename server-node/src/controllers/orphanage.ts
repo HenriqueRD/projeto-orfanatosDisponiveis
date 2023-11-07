@@ -22,7 +22,7 @@ export async function createOrphanage(req: Request, res: Response) {
     description: req.body.description,
     instructions: req.body.instructions,
     open_time: req.body.open_time,
-    open_week: req.body.open_week,
+    open_week: Boolean(req.body.open_week),
     images
   })
 
